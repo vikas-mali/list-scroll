@@ -4,7 +4,7 @@ $('.container > .listWrapper > ul > li').on('mouseover',function () {
     $(this).addClass('active').siblings().removeClass('active');
 });
 
-$(document).on('keydown',function(event){
+$(document).on('keyup',function(event){
     event.stopPropagation();
    var keyCode = event.keyCode;
    let activePosTop = +($('li.active').position().top)+27;
